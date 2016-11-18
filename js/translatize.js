@@ -71,7 +71,6 @@ $("#poems").click(
 
                     titles.push(poemTitles[i]);
                 }
-                //console.log(titles);
                 random = Math.floor(Math.random() * titles.length);
             })
             .then(function()
@@ -82,8 +81,6 @@ $("#poems").click(
                         "/lines.json")
                     .done(function(data)
                     {
-                        console.log(data);
-                        console.log(data[0].lines);
                         let poetry = ''
                         for (var i = 0; i < data[0].lines.length; i++)
                         {
