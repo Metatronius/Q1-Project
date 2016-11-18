@@ -6,9 +6,6 @@ $('#submit').click(
     {
         let make;
         event.preventDefault();
-        console.log(
-            `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20161115T161210Z.4d649a3b3fe8724e.b7d41665eccf337b03ed8e6e85dda10f353725ec&text=${input.value}&lang=en-ja`
-        );
         $.get(
                 `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20161115T161210Z.4d649a3b3fe8724e.b7d41665eccf337b03ed8e6e85dda10f353725ec&text=${input.value}&lang=en-ja`
             )
@@ -50,7 +47,7 @@ $('#submit').click(
                 ).done(function(data)
                 {
                     make = data.text[0];
-                    $("#input").val(make);
+                    $('#output').val(make);
                     $('#input').trigger('autoresize');
                 });
 

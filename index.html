@@ -12,9 +12,9 @@
 
 <body>
     <!--Import jQuery before materialize.js-->
-    <div class=navbar-fixed-top>
+    <div class="navbar-fixed-top">
         <nav>
-            <div class="class nav-wrapper">
+            <div class="class nav-wrapper orange">
                 <div class="class container">
                     <a href="index.html" class="brand-logo-center">
                         <i class="material-icons left">chat_bubble_outline</i> Translatizer
@@ -41,16 +41,19 @@
                         <li><a href="#!">5 times</a></li>
                     </ul> -->
                     <div class="col s6">
-                        <button id="submit" class="btn-large waves-effect waves-light">
+                        <button id="submit" class="btn-large waves-effect waves-light blue">
                             Translatize!
                         </button>
                     </div>
                     <div class="col s6">
-                        <button id="poems" class="btn-large waves-effect waves-light">
+                        <button id="poems" class="btn-large waves-effect waves-light blue">
                         Insert Random Poem
                         </button>
                     </div>
                 </div>
+            </form>
+            <form class="col s12">
+                <textarea id="output"></textarea>
             </form>
         </div>
     </main>
@@ -59,7 +62,7 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/translatize.js"></script>
 </body>
-<footer class="page-footer" color=>
+<footer class="page-footer orange">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
