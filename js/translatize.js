@@ -86,7 +86,6 @@ $("#poems").click(
                         {
                             poetry += data[0].lines[i] + ' \n';
                         }
-                        console.log(poetry);
                         $("#input").val(poetry);
                         $('#input').trigger('autoresize');
                     });
