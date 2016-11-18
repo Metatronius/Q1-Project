@@ -4,4 +4,5 @@ Translate API
 https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
 Translate API Key
 trnsl.1.1.20161115T161210Z.4d649a3b3fe8724e.b7d41665eccf337b03ed8e6e85dda10f353725ec
-    
+
+https://translate.yandex.net/api/v1.5/tr.json/getLangs?key=trnsl.1.1.20161115T161210Z.4d649a3b3fe8724e.b7d41665eccf337b03ed8e6e85dda10f353725ec
