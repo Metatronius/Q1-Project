@@ -48,7 +48,7 @@ $('#submit').click(
                 {
                     make = data.text[0];
                     $('#output').val(make);
-                    $('#input').trigger('autoresize');
+                    $('#output').trigger('autoresize');
                 });
 
             })
