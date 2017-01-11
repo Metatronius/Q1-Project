@@ -82,9 +82,19 @@ $("#poems").click(
                     .done(function(data)
                     {
                         let poetry = ''
-                        for (var i = 0; i < data[0].lines.length; i++)
+                        if (data[0].lines.length < 10)
                         {
-                            poetry += data[0].lines[i] + ' \n';
+                            for (var i = 0; i < data[0].lines.length; i++)
+                            {
+                                poetry += data[0].lines[i] + ' \n ';
+                            }
+                        }
+                        else
+                        {
+                            for (var i = 0; i < 10; i++)
+                            {
+                                poetry += data[0].lines[i] + ' \n';
+                            }
                         }
                         $("#input").val(poetry);
                         $('#input').trigger('autoresize');
